@@ -11,6 +11,7 @@ import play.api.mvc._
 @Singleton
 class HomeController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
 
+    var times = 0
   /**
    * Create an Action to render an HTML page.
    *
@@ -19,6 +20,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
    * a path of `/`.
    */
   def index() = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.index())
+    times += 1
+    Ok(views.html.index(times))
   }
 }
