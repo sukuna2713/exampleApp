@@ -2,10 +2,10 @@ var userNameInput = document.getElementById('user-name');
 var assessmentButton = document.getElementById('assessment');
 var resultDivided = document.getElementById('result-area');
 var tweetDivided = document.getElementById('tweet-area');
-assessmentButton.onclick = function() {
-  console.log('ボタンが押されました');
-  // TODO 診断結果表示エリアの作成
-  // TODO ツイートエリアの作成
+//ボタンをクリックしたときのやつ
+assessmentButton.onclick = function () {
+    var username = userNameInput.nodeValue;
+    console.log("button clicked");
 };
 var answers = [
     '{username}unk',

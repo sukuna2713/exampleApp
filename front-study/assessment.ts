@@ -2,6 +2,11 @@ const userNameInput = document.getElementById('user-name');
 const assessmentButton = document.getElementById('assessment');
 const resultDivided = document.getElementById('result-area');
 const tweetDivided = document.getElementById('tweet-area');
+//ボタンをクリックしたときのやつ
+assessmentButton.onclick = () => {
+    const username = userNameInput.nodeValue
+    console.log("button clicked")
+}
 const answers: string[] = [
     '{username}unk',
     '{username}tnk'
