@@ -10,5 +10,5 @@ vscode:
     - scalameta.metals@1.7.2:ORs01tzkKl6fAKyhAExj+w==
 tasks:
   - command: >
-   sdk install sbt
-   npm install -g typescript
+   bash -c "sdk install sbt &&
+   npm install -g typescript"
